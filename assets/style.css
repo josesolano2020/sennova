@@ -1,0 +1,232 @@
+
+/* reset padding y margin general */
+
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+@font-face {
+    font-family: zurichItalic;
+    src: url(ZurichCondensedItalicBT.ttf)
+}
+
+@font-face {
+    font-family: zurichBold;
+    src: url(ZurichBoldBT.ttf)
+}
+/* creamos variables */
+
+:root{
+
+    /* color */
+--naranja: #FC7323;
+--verde: #238276;
+--verdeComplementario: #596548;
+--blanco: white;
+--negro: black;
+
+/* font */
+--zurichItalic: zurichItalic;
+--zurichBold: zurichBold;
+
+/* fontsize */
+--sm: 14px;
+--md: 16px;
+--lg: 18px;
+
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--zurichBold);
+    width: 100%;
+    height: 100vh;
+    /* background-color: var(--negro); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .contenedor{
+    margin: 0px;
+    padding: 0px;
+    height: 90vh;
+    width: 90%;
+    background-color: var(--naranja);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px black;
+   
+} */
+
+
+.firstpage{
+    
+    margin: 0px;
+    height: 90vh;
+    width: 90%;
+    /* border: 10px solid var(--naranja); */
+    border: none;
+    border-radius: 10px;
+    /* background-color: var(--verde); */
+    box-shadow:1px 5px 8px 1px rgba(0,0,0,0.66);
+}
+
+
+h1{
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    color: var(--naranja);
+}
+
+.login{
+    padding: 0px;
+    width: 50%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: var(--blanco);
+}
+
+.carrusel{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+    background-color: var(--naranja);
+    padding-right: 10px;
+    padding-left: 20px;
+    
+}
+
+/* estilos titulo */
+.titulo{
+    margin: 0px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 100px;
+    justify-items: center;
+    
+}
+
+.titulo span{
+    align-self: center;
+    padding-right: 10px;
+}
+
+/* estilos del formulario */
+/* creamos 3 filas con grid */
+
+
+.formulario{
+    background-color: var(--blanco);
+    padding: 10px;
+}
+
+.form-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    width: 60px;
+    margin-bottom: 10px;
+    justify-self: center;
+    
+    
+}
+
+.label{
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.input{
+    background-color: var(--white);
+    border: 1px solid var(--verde);
+    border-radius: 8px;
+    height: 30px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+    
+}
+
+.input-email{
+    margin-bottom: 5px;    
+}
+
+.primary-button{
+    background-color: var(--verde);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 30px;
+}
+.login-button{
+    margin-top: 14px;
+    margin-bottom: 10px;
+}
+
+
+.resend{
+    font-size: var(--sm);
+
+}
+
+form p {
+    text-align: center;
+    font-size: var(--sm);
+    margin-bottom: 10px;
+    
+}
+
+.resend a{
+    color: var(--naranja);
+    text-decoration: none;
+   
+}
+
+
+.secondary-button{
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--verde);
+    color: var(--verde);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 30px;
+}
+
+
+footer{
+    color: var(--verdeComplementario);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
